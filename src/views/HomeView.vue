@@ -8,7 +8,7 @@
             <br>Suarez Anzorena
           </h1>
           <div class="asterisk">
-            <img src="/asterisk.svg" alt="">
+            <img src="/images/asterisk.svg" alt="">
           </div>
         </div>
         <div class="leftMargin whiteText">
@@ -78,43 +78,50 @@
 
   //SCROLL ANIMATIONS
   onMounted(() => {
-    gsap.registerPlugin(ScrollTrigger);
-    var tl = gsap.timeline();
-    tl.fromTo('.first-scroll',
-      {
-        xPercent: 0,
+  gsap.registerPlugin(ScrollTrigger);
+
+  // Timeline for scroll-triggered animations
+  const tl = gsap.timeline();
+
+  // First scroll animation: faster + smoother easing
+  tl.fromTo('.first-scroll',
+    {
+      xPercent: 0,
+    },
+    {
+      xPercent: 200,
+      duration: 1.2, // reduced from 2.5 to make it faster
+      ease: "power2.out", // smoother easing
+      scrollTrigger: {
+        trigger: '#home',
+        start: '20% 30%',
+        end: 'bottom 70%',
+        scrub: true,
+        markers: false,
+        id: 'trigger-1',
+      }
+  });
+
+  // Second scroll animation: smoother
+  tl.fromTo('#works',
+    {
+      yPercent: 100,
+    },
+    {
+      duration: 3,
+      yPercent: 0,
+      ease: 'power2.out',
+      scrollTrigger: {
+        trigger: '#home',
+        start: 'top 0%',
+        end: 'bottom 20%',
+        scrub: true,
+        markers: false,
+        id: 'trigger-2',
       },
-      {
-        xPercent: 200,
-        duration: 2.5,
-        ease: "power1.inOut",
-        scrollTrigger: {
-          trigger: '#home',
-          start: '20% 30%',
-          end: 'bottom 80%',
-          scrub: true,
-          markers: false,
-          id: 'trigger-1',
-        }
-    });
-    tl.fromTo('#works',
-      {
-        yPercent: 100,
-      },
-      {
-        duration: 3,
-        yPercent: 0,
-        ease: 'power2.inOut',
-        scrollTrigger: {
-          trigger: '#home',
-          start: 'top 0%',
-          end: 'bottom 20%',
-          scrub: true,
-          markers: false,
-          id: 'trigger-2',
-        },
-      }, '+=9');
-  })
+    }, '+=6'); // reduced delay to make the entrance more natural
+});
+
   onUnmounted(() => {
     ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
   });

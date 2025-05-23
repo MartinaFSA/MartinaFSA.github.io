@@ -1,5 +1,18 @@
 [
     {
+        "title": "HomeTeam Ventures",
+        "isVideo": true,
+        "img": "portada-hometeam.png",
+        "video": "HomeTeam_video.mp4",
+        "preview": "page-HomeTeam.png",
+        "owner": "Developed for Aguaviva studio",
+        "design": "Designed by Aguaviva",
+        "description": "A dynamic and engaging platform created for HomeTeam, a venture firm investing in breakthrough technologies reshaping the construction and housing industries. The site features smooth scroll-based animations, a modern aesthetic, and a playful yet professional tone that reflects the brand's innovative spirit. Its fully responsive layout ensures a seamless experience across all devices. The content is designed to foster trust and familiarity with potential founders and partners, effectively communicating HomeTeam's mission and values.",
+        "development": "Built in Webflow, leveraging CMS collections, custom HTML/CSS, JavaScript, and GSAP for advanced animations and interactions.",
+        "link": "https://hometeams-newsite.webflow.io/",
+        "date": "May 2025"
+    },
+    {
         "title": "Kesler",
         "isVideo": false,
         "img": "portada-kesler.png",
@@ -7,9 +20,22 @@
         "preview": "page-kelser.png",
         "owner": "Developed for Aguaviva studio",
         "design": "Designed by Aguaviva",
-        "description": "Intuitive and user-friendly web platform for a legal agency in Buenos Aires. The website integrates sleek design elements and simple functionality to enhance the user experience.",
-        "development": "Made with VueJS, PHP and MySQL",
+        "description": "An intuitive, user-centric web platform developed for a boutique legal studio based in Buenos Aires. The website combines clean, modern design with streamlined functionality to create a seamless and professional experience for clients. Its architecture prioritizes usability and clarity, making legal services feel approachable and accessible.",
+        "development": "Built with Vue.js, a custom PHP API, and a MySQL database to enable dynamic data handling and efficient content management.",
         "link": "https://new.kesleryasociados.com.ar/",
+        "date": "January 2025"
+    },
+    {
+        "title": "Madrefoca",
+        "isVideo": true,
+        "img": "portada-madrefoca.png",
+        "video": "Madrefoca_video.mp4",
+        "preview": "",
+        "owner": "Developed for Aguaviva studio",
+        "design": "Designed by Aguaviva",
+        "description": "An interactive and visually rich website designed to captivate users through refined microinteractions, smooth animations, and elegant transitions. This immersive digital experience reflects Madrefoca's creative energy and design-forward approach.",
+        "development": "Created in Webflow with custom HTML, JavaScript, and CSS, and integrated with Vimeo for seamless media presentation.",
+        "link": "",
         "date": "January 2025"
     },
     {
@@ -24,31 +50,5 @@
         "development": "Made with VueJS, PHP, MySQL and the Meta API to integrate Instagram posts",
         "link": "https://corderogaucho.com.ar/",
         "date": "August 2024"
-    },
-    {
-        "title": "Madrefoca",
-        "isVideo": true,
-        "img": "portada-madrefoca.png",
-        "video": "Madrefoca_video.mp4",
-        "preview": "",
-        "owner": "Developed for Aguaviva studio",
-        "design": "Designed by Aguaviva",
-        "description": "A dynamic and interactive page that includes microinteractions, smooth animations and transitions to enhance the user experience.",
-        "development": "Made with Webflow, custom HTML, JS and CSS and vimeo integrations",
-        "link": "",
-        "date": "January 2025"
-    },
-    {
-        "title": "Online News Portal",
-        "isVideo": false,
-        "img": "placeholder.png",
-        "video": "",
-        "preview": "placeholder.png",
-        "owner": "Own authorship",
-        "design": "Personal project",
-        "description": "Online news portal with capacity for a robust amount of articles. Common users are able to read an unlimited amount of essay and news uploaded by the organization's writers. Collaborators can access and edit their public profiles and create their pieces from inside the webpage.",
-        "development": "Made with VueJS, PHP, MySQL and the Meta API to integrate Instagram posts",
-        "link": "https://github.com/MartinaFSA/newsMagazine",
-        "date": "In progress"
     }
 ]
