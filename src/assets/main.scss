@@ -94,7 +94,6 @@
         }
         .cards {
             display: grid;
-            grid-template-columns: 50% 50%;
             justify-content: space-between;
             justify-items: center;
             align-items: center;
@@ -117,11 +116,6 @@
                             }
                         }
                     }
-                    // .projectImg:hover {
-                    //     img {
-                    //         transform: translate(10px, 10px);
-                    //     }
-                    // }
                 }
                 &:nth-of-type(odd) {
                     .projectName {
@@ -326,7 +320,7 @@ footer {
         }
     }
 }
-@media (max-width: 865px) {
+@media screen and (max-width: 865px) {
     #home #ctn_projects .cards {
         grid-template-columns: 100%;
         .projectCard {
@@ -335,9 +329,14 @@ footer {
         }
     }
 }
-@media (max-width: 438px) {
+
+@media screen and (min-width: 865px) {
     #home #ctn_projects .cards {
-        grid-template-columns: 100%;
+        grid-template-columns: 50% 50%;
+    }
+}
+@media screen and (max-width: 438px) {
+    #home #ctn_projects .cards {
         .projectCard {
             .projectImg {
                 aspect-ratio: 1 / 1;
@@ -383,7 +382,6 @@ footer {
     background-color: rgba(0, 0, 0, 0.582);
     justify-content: center;
     align-items: center;
-    padding: 50px;
     > div {
         background-color: var(--white);
         width: 80%;
@@ -394,7 +392,7 @@ footer {
             top: -35px;
             right: -35px;
             z-index: 3;
-            color: var(--accent-color);
+            color: var(--accentColor);
         }
         .modal-body {
             height: 100%;
@@ -412,20 +410,27 @@ footer {
                 overflow: visible;
                 color: var(--black);
                 margin-bottom: 50px;
-                > div {
-                    p {
-                        width: fit-content;
-                    }
+                a {
+                    color: var(--accentColor);
                 }
-                .h3 {
+                a > .h3 {
+                    margin-bottom: 30px;
+                }
+                .generalText {
                     margin-bottom: 20px;
                 }
             }
         }
     }
 }
+@media screen and (min-width: 865px) {
+    .modal {
+        padding: 50px;
+    }
+}
 @media screen and (max-width: 865px) {
     .modal {
+        padding: 15px;
         > div {
             width: 90%;
             height: 90%;
@@ -451,10 +456,6 @@ footer {
                     width: 65%;
                 } .modal-text {
                     width: 35%;
-                    > div {
-                        position: fixed;
-                        width: 23%;
-                    }
                 }
             }
         }

@@ -78,7 +78,7 @@ h1, .h1 {
 h2, .h2 {
   color: var(--white);
   font-family: var(--accentFont);
-  font-size: clamp(4rem, 7vw, 7vw);
+  font-size: clamp(60px, 7vw, 7vw);
   text-transform: uppercase;
   font-weight: 200;
   line-height: clamp(4rem, 7vw, 7vw);
@@ -86,7 +86,7 @@ h2, .h2 {
   margin: 0;
 }
 h3, .h3 {
-  font-size: clamp(3rem, 4vw, 5vw);
+  font-size: clamp(50px, 4vw, 5vw);
   font-weight: 400;
   font-family: var(--accentFont);
   text-transform: uppercase;
@@ -94,7 +94,7 @@ h3, .h3 {
 }
 h4, .h4 {
   color: var(--white);
-  font-size: 1.8rem;
+  font-size: 30px;
   font-weight: 400;
   font-family: var(--accentFont);
   text-transform: uppercase;
@@ -104,7 +104,7 @@ h4, .h4 {
   text-align: left;
   font-family: var(--mainFont);
   max-width: 50ch;
-  font-size: 1rem;
+  font-size: 20px;
   margin-bottom: 0.5rem;
 }
 ul {
@@ -122,6 +122,12 @@ ul {
 }
 .rightMargin {
   right: var(--sideMargin);
+}
+.mt-30 {
+  margin-top: 30px;
+}
+.underline {
+  text-decoration: underline;
 }
 
 .cross {

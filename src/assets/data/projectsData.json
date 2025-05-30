@@ -22,7 +22,7 @@
         "design": "Designed by Aguaviva",
         "description": "An intuitive, user-centric web platform developed for a boutique legal studio based in Buenos Aires. The website combines clean, modern design with streamlined functionality to create a seamless and professional experience for clients. Its architecture prioritizes usability and clarity, making legal services feel approachable and accessible.",
         "development": "Built with Vue.js, a custom PHP API, and a MySQL database to enable dynamic data handling and efficient content management.",
-        "link": "https://new.kesleryasociados.com.ar/",
+        "link": "https://kesleryasociados.com.ar/",
         "date": "January 2025"
     },
     {
@@ -47,7 +47,7 @@
         "owner": "Developed for Aguaviva studio",
         "design": "Designed by Aguaviva",
         "description": "Dynamic and visually appealing platform for Cordero Gaucho, a meat provider specializing in authentic Argentine lamb products. The website features a modern design with easy navigation and a responsive layout to ensure a seamless experience on any device. Users can effortlessly browse the product catalog and reach out via WhatsApp to complete their purchases.",
-        "development": "Made with VueJS, PHP, MySQL and the Meta API to integrate Instagram posts",
+        "development": "VueJS, PHP, MySQL and the Meta API to integrate Instagram posts",
         "link": "https://corderogaucho.com.ar/",
         "date": "August 2024"
     }

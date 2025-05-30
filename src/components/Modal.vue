@@ -8,10 +8,12 @@
             <div class="modal-body">
                 <div class="modal-text">
                     <div>
-                        <p class="h3">{{project.title}}</p>
+                        <a :href="project.link"><p class="h3">{{project.title}}</p></a>
                         <p class="generalText orangeText">{{project.date}}</p>
                         <p class="generalText">{{project.description}}</p>
                         <p class="generalText">Made with: <span class="orangeText">{{project.development}}</span></p>
+                        
+                        <a :href="project.link" class="generalText orangeText h3 mt-30 underline" v-if="project.link">Go to project</a>
                     </div>
                 </div>
                 <div class="modal-image">
